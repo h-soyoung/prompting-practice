@@ -213,17 +213,17 @@ img {
 
 .room__gallery:hover .room__slide,
 .room__gallery:focus .room__slide {
-  animation: room-cycle 4s step-end infinite;
+  animation: room-cycle 0.8s step-end infinite;
 }
 
 .room__slide--1 { animation-delay: 0s !important; }
-.room__slide--2 { animation-delay: -3.5s !important; }
-.room__slide--3 { animation-delay: -3s !important; }
-.room__slide--4 { animation-delay: -2.5s !important; }
-.room__slide--5 { animation-delay: -2s !important; }
-.room__slide--6 { animation-delay: -1.5s !important; }
-.room__slide--7 { animation-delay: -1s !important; }
-.room__slide--8 { animation-delay: -0.5s !important; }
+.room__slide--2 { animation-delay: -0.7s !important; }
+.room__slide--3 { animation-delay: -0.6s !important; }
+.room__slide--4 { animation-delay: -0.5s !important; }
+.room__slide--5 { animation-delay: -0.4s !important; }
+.room__slide--6 { animation-delay: -0.3s !important; }
+.room__slide--7 { animation-delay: -0.2s !important; }
+.room__slide--8 { animation-delay: -0.1s !important; }
 
 @keyframes room-cycle {
   0%,
@@ -637,6 +637,46 @@ img {
   outline-offset: calc(2 * var(--u));
 }
 
+.reservation__submit {
+  position: absolute;
+  left: calc(731 * var(--u));
+  top: calc(758 * var(--s));
+  width: calc(458 * var(--u));
+  height: calc(46 * var(--s));
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--green);
+  color: var(--ink);
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(40 * var(--u));
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.reservation__submit:hover,
+.reservation__submit:focus-visible {
+  color: var(--green);
+  background: var(--ink);
+}
+
+.reservation__submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.reservation__message {
+  position: absolute;
+  left: calc(731 * var(--u));
+  top: calc(822 * var(--s));
+  width: calc(458 * var(--u));
+  font-family: "Helvetica", sans-serif;
+  font-size: calc(20 * var(--u));
+  line-height: 1.25;
+  text-align: center;
+}
+
 .reservation__art {
   position: absolute;
   left: calc(1245 * var(--u));
@@ -707,6 +747,8 @@ img {
 
   .reservation__form label,
   .reservation__form input,
+  .reservation__submit,
+  .reservation__message,
   .reservation__form label[for="reservation-name"],
   .reservation__form label[for="reservation-email"],
   #reservation-name,
@@ -727,6 +769,19 @@ img {
     height: clamp(42px, 6vh, 54px);
     padding: 0 clamp(10px, 1.5vw, 14px);
     font-size: clamp(18px, 2.5vw, 24px);
+  }
+
+  .reservation__submit {
+    grid-column: 2;
+    width: 100%;
+    height: clamp(42px, 6vh, 54px);
+    font-size: clamp(24px, 4vw, 38px);
+  }
+
+  .reservation__message {
+    grid-column: 1 / -1;
+    width: 100%;
+    font-size: clamp(14px, 2.2vw, 18px);
   }
 
   .reservation__art {

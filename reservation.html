@@ -16,7 +16,7 @@
 
       <h1 id="reservation-title" class="reservation__title">Early Bird</h1>
 
-      <form class="reservation__form">
+      <form class="reservation__form" id="reservation-form" novalidate>
         <label for="reservation-name">Name :</label>
         <input
           id="reservation-name"
@@ -33,7 +33,11 @@
           type="email"
           autocomplete="email"
           aria-label="E-mail"
+          required
         />
+
+        <button class="reservation__submit" type="submit">Get own space</button>
+        <p class="reservation__message" id="reservation-message" role="status" aria-live="polite"></p>
       </form>
 
       <img
@@ -42,5 +46,6 @@
         alt="OWN ROOM Early Bird 그래픽"
       />
     </main>
+    <script src="reservation.js"></script>
   </body>
 </html>
