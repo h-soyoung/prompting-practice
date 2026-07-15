@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OWN ROOM Early Bird 사전 예약 페이지"
+    />
+    <title>Early Bird — OWN ROOM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="reservation-page">
+    <main class="reservation" aria-labelledby="reservation-title">
+      <p class="reservation__status">OWN ROOM IN PROGRESS...</p>
+
+      <h1 id="reservation-title" class="reservation__title">Early Bird</h1>
+
+      <form class="reservation__form">
+        <label for="reservation-name">Name :</label>
+        <input
+          id="reservation-name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          aria-label="Name"
+        />
+
+        <label for="reservation-email">E-mail :</label>
+        <input
+          id="reservation-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          aria-label="E-mail"
+        />
+      </form>
+
+      <img
+        class="reservation__art"
+        src="assets/reservation-art-ink.png"
+        alt="OWN ROOM Early Bird 그래픽"
+      />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+# 운영체제가 자동으로 만드는 폴더 보기 설정 파일
+.DS_Store
+
+# 로컬 실행·미리보기에서만 생성되는 파일
+.vinext/
+.wrangler/
+
+# 나중에 추가될 수 있는 비밀 설정 파일과 인증서
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 사용하지 않는 이미지 편집 임시 결과
+assets/reservation-art-navy.png
