@@ -302,6 +302,7 @@ main {
 .problem__title .myeongjo {
   display: inline-block;
   color: #000;
+  filter: blur(4px);
   font-family: "Nanum Myeongjo", serif;
   font-size: 80px;
   font-weight: 700;
@@ -808,6 +809,8 @@ main {
 }
 
 .find h2 .myeongjo {
+  display: inline-block;
+  filter: blur(4px);
   font-family: "Nanum Myeongjo", serif;
   font-size: 80px;
   font-weight: 700;
