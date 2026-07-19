@@ -1243,7 +1243,7 @@ main {
 
 .early-error {
   position: absolute;
-  left: calc(884 / 1920 * 100%);
+  left: calc(892 / 1920 * 100%);
   top: calc(505 / 1080 * 100%);
   width: calc(360 / 1920 * 100%);
   margin: 0;
