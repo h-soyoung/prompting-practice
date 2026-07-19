@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="description" content="CHUGU Early Bird 사전 등록" />
+    <title>Early Bird — CHUGU</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="figma-screen-page">
+    <header class="header">
+      <a class="brand kind" href="index.html" aria-label="CHUGU 메인으로 이동">CHUGU</a>
+      <a class="header__contact" href="contact.html">Contact</a>
+    </header>
+    <main class="figma-screen figma-screen--early" aria-labelledby="early-bird-title">
+      <img
+        class="figma-screen__art"
+        src="assets/figma/early-bird/early-bird1.png"
+        alt=""
+      />
+      <span class="bird-cover bird-cover--budgie"></span>
+      <span class="bird-cover bird-cover--cockatiel"></span>
+      <span class="bird-cover bird-cover--pigeon"></span>
+      <span class="egg-cover"></span>
+      <span class="progress-strip-cover"></span>
+      <span class="early-progress-marquee">
+        <span class="kind">CHUGU</span> in progress　　<span class="kind">CHUGU</span> in progress　　<span class="kind">CHUGU</span> in progress　　<span class="kind">CHUGU</span> in progress　　<span class="kind">CHUGU</span> in progress
+      </span>
+      <img
+        class="early-bird early-bird--budgie"
+        src="assets/figma/early-bird/budgie.png"
+        alt=""
+      />
+      <img
+        class="early-bird early-bird--cockatiel"
+        src="assets/figma/early-bird/cockatiel.png"
+        alt=""
+      />
+      <img
+        class="early-bird early-bird--pigeon"
+        src="assets/figma/early-bird/pigeon.png"
+        alt=""
+      />
+      <h1 id="early-bird-title" class="sr-only">Early Bird</h1>
+      <form class="early-form" id="early-form" novalidate>
+        <label class="sr-only" for="early-name">Name</label>
+        <input id="early-name" name="name" type="text" autocomplete="name" />
+        <label class="sr-only" for="early-email">E-mail</label>
+        <span class="early-email-label-repair" aria-hidden="true">E-mail :</span>
+        <input id="early-email" name="email" type="email" autocomplete="email" />
+        <button class="early-register" type="submit" aria-label="Early Bird 등록">
+          <img src="assets/figma/early-bird/egg.png" alt="" />
+          <span>Register</span>
+        </button>
+        <p class="early-error" id="early-error" role="alert" aria-live="polite"></p>
+      </form>
+    </main>
+    <div class="heart-transition" aria-hidden="true">♥</div>
+    <script src="early-bird.js"></script>
+  </body>
+</html>
