@@ -167,6 +167,13 @@ const specialLetters = [...findField.querySelectorAll("[data-special]")];
 const passingLetters = [...findField.querySelectorAll("span:not([data-special])")];
 const allFindLetters = [...findField.querySelectorAll("span")];
 const foundSpecialLetters = new Set();
+const titleLetters = new Map(
+  [...document.querySelectorAll("[data-title-letter]")].map((letter) => [
+    letter.dataset.titleLetter,
+    letter,
+  ]),
+);
+let findRedirectTimer;
 
 function randomizeFindLetters() {
   const placed = [];
@@ -209,8 +216,12 @@ allFindLetters.forEach((letter) => {
 
     foundSpecialLetters.add(special);
     letter.classList.add("is-found");
-    if (foundSpecialLetters.size === 3) {
-      window.location.href = "early-bird.html";
+    titleLetters.get(special)?.classList.add("is-revealed");
+
+    if (foundSpecialLetters.size === 3 && !findRedirectTimer) {
+      findRedirectTimer = window.setTimeout(() => {
+        window.location.href = "early-bird.html";
+      }, 1500);
     }
   });
 });

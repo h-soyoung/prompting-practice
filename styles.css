@@ -810,10 +810,19 @@ main {
 
 .find h2 .myeongjo {
   display: inline-block;
-  filter: blur(4px);
   font-family: "Nanum Myeongjo", serif;
   font-size: 80px;
   font-weight: 700;
+}
+
+.find h2 [data-title-letter] {
+  display: inline-block;
+  filter: blur(4px);
+  transition: filter 280ms ease;
+}
+
+.find h2 [data-title-letter].is-revealed {
+  filter: blur(0);
 }
 
 .find__field {
