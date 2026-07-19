@@ -561,21 +561,21 @@ main {
 .value-card__body p {
   position: absolute;
   left: 327px;
-  top: 379px;
-  width: 193px;
-  height: 216px;
+  top: 404px;
+  width: 129px;
+  height: 144px;
   color: #000;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  letter-spacing: -0.6px;
-  line-height: 36px;
+  letter-spacing: -0.4px;
+  line-height: 24px;
   text-align: left;
   text-shadow: none;
 }
 
 .value-card:nth-child(2) .value-card__body p,
 .value-card:nth-child(3) .value-card__body p {
-  width: 133px;
+  width: 89px;
 }
 
 .stories {
