@@ -46,10 +46,22 @@
       <h1 id="early-bird-title" class="sr-only">Early Bird</h1>
       <form class="early-form" id="early-form" novalidate>
         <label class="sr-only" for="early-name">Name</label>
-        <input id="early-name" name="name" type="text" autocomplete="name" />
+        <input
+          id="early-name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          maxlength="80"
+        />
         <label class="sr-only" for="early-email">E-mail</label>
         <span class="early-email-label-repair" aria-hidden="true">E-mail :</span>
-        <input id="early-email" name="email" type="email" autocomplete="email" />
+        <input
+          id="early-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          maxlength="254"
+        />
         <button class="early-register" type="submit" aria-label="Early Bird 등록">
           <img src="assets/figma/early-bird/egg.png" alt="" />
           <span>Register</span>
