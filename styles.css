@@ -472,6 +472,40 @@ main {
   background-image: url("assets/figma/workflow/204-5960.png");
 }
 
+.workflow__steps li:nth-child(3)::before {
+  content:
+    "정의된 추구미를 일상으로 옮길 수 있도록\A"
+    "Outfit, Space, Routine, taste 4가지 항목에서\A"
+    "8주간의 구체적인 실천 플랜을 제안합니다.";
+  position: absolute;
+  z-index: 6;
+  left: 7px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 159px;
+  border: 0.7px solid #000;
+  background: #fff;
+  color: #000;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+  text-align: center;
+  white-space: pre;
+  opacity: 0;
+  transform: rotate(-6deg);
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+
+.workflow__steps li:nth-child(3):hover::before {
+  opacity: 1;
+}
+
 .workflow__steps li:hover {
   z-index: 20;
 }
