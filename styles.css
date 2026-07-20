@@ -200,17 +200,6 @@ main {
   color: #fff;
 }
 
-.hero__cutout {
-  position: absolute;
-  z-index: 3;
-  left: 923px;
-  top: -62px;
-  width: 840px;
-  height: 1031px;
-  object-fit: cover;
-  pointer-events: none;
-}
-
 .hero h1 {
   position: relative;
   width: 829px;
